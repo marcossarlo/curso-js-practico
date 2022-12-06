@@ -53,3 +53,44 @@ let deudas = 100;
 let nombreCompleto = nombre + ' ' + apellido;
 let dineroReal = dineroAhorrado - deudas;
 ```
+
+## Funciones
+
+### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+- ¿Qué es una función?
+
+Las funciones nos permiten encapsular (guardar) bloques de código para reutilizarlos y ejecutarlos en el futuro.
+
+- ¿Cuándo me sirve usar una función en mi código?
+
+Nos sirve cuando tenemos variables o bloques de código muy parecidos (con cambios que podrían ser parámetros y argumentos) que podemos encapsular para reutilizar más de una vez en el futuro.
+
+También nos sirve para ordenar y mejorar la legibilidad de nuestro código.
+
+- ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+Las funciones reciben parámetros cuando las creamos. Y les enviamos argumentos cuando las ejecutamos.
+
+### 2️⃣ Convierte el siguiente código en una función, pero cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+
+```
+const name = "Marcos Edu";
+const lastname = "sar Lo";
+const completeName = name + lastname;
+const nickname = "marcossarlo";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+```
+
+```
+function nombreCompleto(name, lastName) {
+    return name + ' ' + lastName
+}
+
+function saludo(name, lastname, username) {
+    const completeName = nombreCompleto(name, lastname);
+
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + username + ".");  
+}
+```
